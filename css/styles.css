@@ -1,0 +1,252 @@
+body{    
+    text-align: center;
+    font-family: 'Merienda', cursive;
+  }
+  
+  h1 h2 h3 h4 h5 h6{
+    font-family: 'Bebas Neue', cursive;
+  }
+   
+  /* heading */
+  
+  .big-heading{
+    font-size: 4rem;
+    line-height: 2;
+    
+  }
+  .small{
+        text-align: center;
+        padding-top: 65px;
+      
+  }
+  .small_1{
+      padding-top:30px;
+  }
+
+  .color{
+      background-color: aquamarine;
+  }
+  .size{
+      width: 400px;
+      height: 500px;
+      
+  }
+  .size img{
+      width: 100%;
+      height:350px;
+      border-radius:3% ;
+  }
+  .section-heading{
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+
+  /* /* navigation bar */
+
+:root{
+    --clr: #00C9A7;
+}
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    min-height: 5vh;
+    background: var(--clr);
+    height: px;
+}
+.navigation{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    position: relative;
+    width: 400px;
+    height: 70px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.navigation ul{
+    display: flex;
+    width: 300px;
+}
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+.navigation ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+.navigation ul li a .icon{
+    position: relative;
+    padding-right: px;
+   
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: var(--clr);
+
+}
+
+.navigation ul li.active a .icon{
+    transform: translateY(-33px);
+}
+
+.navigation ul li a .text{
+    position: absolute;
+    color: #845EC2;
+    font-weight: 400;
+    font-size: 0.85em;
+    letter-spacing: 0.2em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.navigation ul li.active a .text{
+    opacity: 1;
+    transform: translateY(10px);
+}
+.indicator{
+    position: absolute;
+    top: -40px;
+    width: 70px;
+    height: 70px;
+    background: #845EC2 ;
+    border-radius: 50px;
+    border: 6px solid var(--clr);
+    transition: 0.5s;
+}
+.indicator::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 100px;
+    box-shadow: 0px -5px 0 0 var(--clr);
+}
+.indicator::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-left-radius: 100px;
+    box-shadow: 0px -5px 0 0 var(--clr);
+}
+
+.navigation ul li:nth-child(1).active ~ .indicator
+{
+    transform: translateX(calc(65px * 0));
+}
+.navigation ul li:nth-child(2).active ~ .indicator
+{
+    transform: translateX(calc(65px * 1));
+}
+.navigation ul li:nth-child(3).active ~ .indicator
+{
+    transform: translateX(calc(67px * 2));
+}
+.navigation ul li:nth-child(4).active ~ .indicator
+{
+    transform: translateX(calc(66px * 3));
+}
+
+  /* projects */
+
+.project{
+    background-color: #34839C ;
+    margin-top:-20px ;
+    margin-bottom: -100px;
+}
+.count{
+      text-align: center;
+      font-size: 80px;
+      padding-top: 30px;
+  }
+
+.c{
+    font-size: 50px;
+    color: #0b090e ;
+}
+
+.b{
+    font-size: 30px;
+    color: #0b090e;
+    padding-bottom: 50px;
+}
+.link{
+    color: yellow;
+}
+
+ .skill-row{
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+  }
+
+  /* skills */
+
+.a{
+    margin-left: 50px;
+}
+.s{
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-bottom: 40px;
+}
+.skill{
+    background-color: #AD5E00;
+}
+
+
+/* about Me */
+
+.test{
+      text-align: center;
+      font-size: 25px;
+      padding-top: 25px;
+      padding-bottom: 40px;
+  }
+.about{
+    background-color: #009EFA ;
+    margin-top: 20px;
+}
+
+/* personal info */
+
+.p{
+    color: yellow;
+}
+
+.footer{
+    text-align: center;
+    background-color: #4D8076 ;
+    margin-top: 25px;
+    
+}
+
+.d{
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}
+
+
